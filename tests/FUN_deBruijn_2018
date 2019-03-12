@@ -1,0 +1,29 @@
+{
+    "global_settings": {
+	"binary_name": "deBruijn",
+	"timeout": 10
+    },
+    "tests": [
+	{
+	    "args": ["4", "--check"],
+	    "name": "bad string",
+	    "stdin": "yoloSWAGdabforni",
+	    "ex_return_code": 0,
+	    "ex_stdout": "KO\n"
+	},
+	{
+	    "args": ["4", "--check"],
+	    "name": "n=4 yes",
+	    "stdin": "0000111101100101",
+	    "ex_return_code": 0,
+	    "ex_stdout": "OK\n"
+	},
+	{
+	    "args": ["4", "--check"],
+	    "name": "n=4 no",
+	    "stdin": "0000111101100110",
+	    "ex_return_code": 0,
+	    "ex_stdout": "KO\n"
+	}
+    ]
+}

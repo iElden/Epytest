@@ -1,0 +1,8 @@
+{"global_settings": {
+  "binary_name": "./hello"
+  },
+ "tests":[
+   {"name":"The basic example",
+    "ex_stdout":"hello\n",
+    "ex_return_code": 0}
+ ]}

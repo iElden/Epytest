@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <title>ielden.eu - Epytest</title>
+  </head>
+  <body>
+    <nav>
+      <form method="post">
+	Login<br>
+	<input type="text", name="login" value={{ login }}><br><br>
+	Project<br>
+        <select id="project_list" name="project_name" value={{ prj }}>
+          <option value="None">Selectionnez un projet ...</option>
+          {% for i in ls_prj %}
+          <option value={{ i }}>{{ i }}</option>
+          {% endfor %}
+        </select><br><br>
+	<button>Launch</button><br>
+      </form>
+      <br>
+      <pre>
+	{{ result }}
+      </pre>
+    </nav>
+  </body>
+</html>
+      
