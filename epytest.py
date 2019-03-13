@@ -72,5 +72,5 @@ def norminette(folder, whitelist=None, traceback=False):
     else:
         return norminette(folder, whitelist=whitelist, traceback=True)
 
-    
-app.run(host="0.0.0.0", port=42421)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=42421)
